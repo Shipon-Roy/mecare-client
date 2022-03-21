@@ -13,6 +13,7 @@ import Login from './components/Login/Login';
 import Register from './components/Registar/Register';
 import AuthProvider from './context/AuthProvider';
 import AddReview from './components/AddReview/AddReview';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -29,12 +30,12 @@ function App() {
           <Route path="/about">
             <About></About>
           </Route>
-          <Route path="/services">
+          <PrivateRoute path="/services">
             <Services></Services>
-          </Route>
-          <Route path="/departments">
+          </PrivateRoute>
+          <PrivateRoute path="/departments">
             <Depertment></Depertment>
-          </Route>
+          </PrivateRoute>
           <Route path="/contact">
             <Contact></Contact>
           </Route>
