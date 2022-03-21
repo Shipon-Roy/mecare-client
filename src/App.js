@@ -12,6 +12,7 @@ import Contact from './components/Contact/Contact';
 import Login from './components/Login/Login';
 import Register from './components/Registar/Register';
 import AuthProvider from './context/AuthProvider';
+import AddReview from './components/AddReview/AddReview';
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route path="/register">
             <Register></Register>
+          </Route>
+          <Route path="/addReview">
+            <AddReview></AddReview>
           </Route>
         </Switch>
         <Footer></Footer>
