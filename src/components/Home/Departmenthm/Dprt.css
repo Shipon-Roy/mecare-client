@@ -1,0 +1,8 @@
+.hover:hover{
+    background-color: rgb(26, 93, 182);
+    color: white;
+    border-radius: 5px;
+}
+.img{
+    height: 800px;
+}
